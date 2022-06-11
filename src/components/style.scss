@@ -1,0 +1,117 @@
+.layout-wrapper {
+  gap: 1rem;
+  margin-top: 1rem;
+  overflow: auto;
+  padding-bottom: 10px;
+}
+
+
+//Create Post
+.create-post-wrapper {
+  background-color: whitesmoke;
+  border-radius: 15px;
+  padding: 30px;
+  .avatar-container {
+    display: grid;
+    place-items: center;
+  }
+  .post-input-container {
+    padding-bottom: 10px;
+    .text-area,
+    .input {
+      width: 100%;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 10px;
+      button {
+        text-transform: capitalize;
+        height: 2rem;
+      }
+    }
+  }
+}
+
+//Post
+.post-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  overflow-y: scroll;
+  .post {
+    .title {
+      padding-left: 2rem;
+      padding-top: 2rem;
+      padding-bottom: 0.5rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      h3 {
+        max-width: 70%;
+        font-size: 20px;
+        font-weight: bolder;
+      }
+      .edit {
+        border-radius: 20px;
+        background-color: rgba(40, 52, 62, 0.07) !important;
+        color: blue;
+        margin-right: 10px;
+      }
+      .delete {
+        border-radius: 20px;
+        background-color: rgba(40, 52, 62, 0.07) !important;
+        color: red;
+        margin-right: 10px;
+      }
+    }
+    .description {
+      padding-left: 3.5rem;
+      p {
+        max-width: 90%;
+        text-align: justify;
+      }
+    }
+    .comment-section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 4rem;
+      gap: 0.5rem;
+      cursor: pointer;
+      p {
+        margin: 0px !important;
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+    .comments {
+      .comments-wrapper {
+        display: grid;
+        grid-template-columns: 20% auto;
+        .account-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .comment {
+          h4 {
+            font-size: 18px;
+            max-width: 80%;
+            font-weight: bolder;
+          }
+          p {
+            font-size: 13px;
+            max-width: 85%;
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}

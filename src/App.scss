@@ -1,0 +1,19 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: auto 50% auto;
+}
+
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background-color: #a6ddf0;
+  filter: blur(72px);
+}
+
+::-webkit-scrollbar {
+  width: 0px !important;
+}
